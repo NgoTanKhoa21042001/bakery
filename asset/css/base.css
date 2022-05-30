@@ -1,0 +1,139 @@
+:root{
+    --while-color:#fff;
+    --black-color:#000;
+    --text-light-color:#878787;
+    --text-color:#222;
+    --primary-color:#ee4d2d;
+    --primary-green-color:#56cfe1;
+    --border-color:#dbdbdb;
+    --gold-color:#ffce3c;
+    --header-height:90px;
+    --slider-height:500px;
+}
+*{
+    box-sizing: inherit;
+    /* transition: all ease-in 0.1s ; */
+}
+
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+    padding:0px;
+    margin:0px;
+}
+a{
+    text-decoration: none;
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 12px 48px;
+    border-radius: 50px;
+    cursor: pointer;
+    min-width: 120px;
+}
+.btn:hover{
+    opacity: 0.8;
+    transition: opacity linear 0.2s;
+}
+.btn-dissable{
+    opacity: 0.5 !important;
+    cursor: default;
+
+}
+@keyframes growDown {
+    0% {
+        opacity: 0;
+        transform: scaleY(0)
+
+    }
+    80%{
+        transform: scaleY(1.1);
+
+    }
+    100%{
+        opacity: 1;
+        transform: scaleY(1);
+    }
+}
+@keyframes growDownMenu  {
+    0% {
+        opacity: 0;
+        transform: scaleY(0)
+
+    }
+    80%{
+        transform: scaleY(1.1);
+
+    }
+    100%{
+        opacity: 1;
+        transform: scaleY(1);
+    }
+}
+@keyframes growUpMenu  {
+    0% {
+        display:block;
+        transform: scaleY(1)
+
+    }
+    99%{
+        display:block;
+        transform: scaleY(0);
+
+    }
+    100%{
+        display:none;
+        transform: scaleY(0);
+    }
+}
+@keyframes slidesOutRight{
+    from {
+        opacity:1;
+        left:0px;
+    }
+    to{
+        left:100%;
+        opacity:0;
+    }
+}
+@keyframes slidesInRight{
+    from {
+       
+        left:100%;
+    }
+    to{
+        left:0;
+       
+    }
+}
+@keyframes slidesInLeft{
+    from {
+       
+        left:-100%;
+    }
+    to{
+        left:0;
+       
+    }
+}
+@keyframes slidesOutLeft{
+    from {
+        opacity: 1;
+        left:0;
+    }
+    to{
+        left:-100%;
+        opacity:0;
+       
+    }
+}
